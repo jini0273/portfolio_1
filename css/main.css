@@ -676,10 +676,10 @@ button{border: none; background: none; cursor: pointer;}
     font-weight: 800;
     margin-bottom: 100px;
 }
-#section10 .inner button{
+#section10 .inner a{
     display: block;
     width: 400px;
-    height: 70px;
+    line-height: 70px;
     padding: 0px 20px;
     border-radius: 999px;
     background: #2C2C2C;
@@ -688,10 +688,11 @@ button{border: none; background: none; cursor: pointer;}
     font-size: 30px;
     font-weight: 600;
     margin: 0 auto;
+    cursor: pointer;
 }
 #section10 .inner .btn_m{
     margin-bottom: 50px;
 }
-#section10 .inner button:hover{
+#section10 .inner a:hover{
     background: #101010;
 }
