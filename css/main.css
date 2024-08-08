@@ -84,6 +84,56 @@ button{border: none; background: none; cursor: pointer;}
     text-indent: -99999px;
     margin-top: 6px;
 }
+/* 글자 애니메이션 UI/UX */
+#section0 .maintxt1{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+    transition-delay: 3s;
+    animation: h2_ani1 1.5s ease-in-out forwards 0.5s;
+}
+#section0.active h2_ani1{
+    opacity: 1;
+    transform: translateX(0);
+}
+@keyframes h2_ani1{
+    0%{transform: translateX(-100px); opacity: 0;}
+    100%{transform: translateX(0); opacity: 1;}
+}
+/* 글자 애니메이션 김진이*/
+#section0 .maintxt2{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.5s ease-in-out;
+    transition-delay: 3s;
+    animation: h2_ani2 1.2s ease-in-out forwards 0.5s;
+}
+#section0.active h2_ani2{
+    opacity: 1;
+    transform: translateX(0);
+}
+@keyframes h2_ani2{
+    0%{transform: translateX(100px); opacity: 0;}
+    100%{transform: translateX(0); opacity: 1;}
+}
+/* 애니메이션 content*/
+#section1 .content_wrap{
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.5s ease-in-out;
+    transition-delay: 3s;
+    animation: content_ani 1.5s ease-in-out forwards 2.5s;
+}
+#section1.active content_ani{
+    opacity: 1;
+    transform: translateY(0);
+}
+@keyframes content_ani{
+    0%{transform: translateY(100px); opacity: 0;}
+    100%{transform: translateY(-45%); opacity: 1;}
+}
+
+
 .navi nav ul.gnb{
     display: flex;
     gap: 50px;
@@ -154,6 +204,8 @@ button{border: none; background: none; cursor: pointer;}
 }
 #fullpage #section1 .content_wrap .contents ul li a:hover{
     color: #222;
+    text-decoration: underline 2px;
+    text-underline-offset: 6px;
 }
 
 /* 세번째 section */
@@ -184,6 +236,7 @@ button{border: none; background: none; cursor: pointer;}
     font-size: 40px;
     font-weight: 600;
     text-align: left;
+    text-indent: 12px;
     line-height: 70px;
 }
 
@@ -209,17 +262,20 @@ button{border: none; background: none; cursor: pointer;}
     color: #fff;
     text-align: center;
     line-height: 80px;
-    font-size: 35px;
+    font-size: 33px;
     font-weight: 600;
     position: relative;
     margin-bottom: 30px;
+}
+#fullpage #section3 .introduce2 ul li:last-child{
+    font-size: 25px;
 }
 #fullpage #section3 .introduce2 ul span{
     width: 450px;
     height: 80px;
     padding: 0px 60px;
     text-align: center;
-    font-size: 35px;
+    font-size: 33px;
     font-weight: 600;
     line-height: 80px;
     border-radius: 999px;
@@ -335,8 +391,7 @@ button{border: none; background: none; cursor: pointer;}
     left: 381px;
     text-indent: 15px;
 }
-#fullpage .section .wrap .info a{
-    display: block;
+#fullpage .section .wrap .info button{
     width: 250px;
     height: 50px;
     color: #FFF;
@@ -357,10 +412,11 @@ button{border: none; background: none; cursor: pointer;}
 #fullpage #section5 .wrap .imgbox{
     width: 755px;
     height: 552px;
+    position: relative;
+    overflow: hidden;
 }
 #fullpage #section5 .wrap .imgbox img{
     width: 100%;
-    height: 100%;
 }
 #fullpage .section .btn_wrap{
     display: flex;
@@ -377,9 +433,12 @@ button{border: none; background: none; cursor: pointer;}
 #fullpage #section6 .wrap .imgbox{
     margin-left: 50px;
 }
+
 /* 여덟번째 section */
 #fullpage #section7 .wrap .imgbox{
     margin-right: -60px;
+    overflow: hidden;
+    position: relative;
 }
 #fullpage #section7 .wrap .info ul>li.usetool{
     display: flex;
@@ -389,6 +448,7 @@ button{border: none; background: none; cursor: pointer;}
 #fullpage #section7 .wrap .info a{
     margin-top: 30px;
 }
+
 /* 아홉번째 section */
 #fullpage #section8 .wrap .info{
     margin-right: 100px;
@@ -404,6 +464,11 @@ button{border: none; background: none; cursor: pointer;}
 #fullpage #section8 .wrap .info .spanbottom{
     left: 1280px;
 }
+#fullpage #section8 .wrap .imgbox{
+    overflow: hidden;
+    position: relative;
+}
+
 /* 열번째 section */
 #section9 .inner{
     width: 1200px;
@@ -477,7 +542,7 @@ button{border: none; background: none; cursor: pointer;}
     height: 100%;
     border-radius: 8px;
     overflow: hidden;
-    background: #2c2c2c;
+    /* background: #2c2c2c; */
 }
 #section9 .inner ul.graphics li a .imgbox img{
     width: 100%;
@@ -492,6 +557,12 @@ button{border: none; background: none; cursor: pointer;}
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
+}
+#section9 .inner ul.graphics li:nth-child(8){
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 /* 커버 */
@@ -569,12 +640,12 @@ button{border: none; background: none; cursor: pointer;}
     height: 100%;
     overflow: hidden;
     border-radius: 8px;
-    background: #2c2c2c;
+    /* background: #2c2c2c; */
 }
 .tab_content ul.uiux li a .imgbox img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
     transition: all 0.5s ease-in-out;
 }
 
@@ -695,4 +766,116 @@ button{border: none; background: none; cursor: pointer;}
 }
 #section10 .inner a:hover{
     background: #101010;
+}
+
+
+/* 제일엔지니어링 반응형 애니메이션 */
+#section5 .wrap .imgbox .innerpc{
+    position: absolute;
+    left: 20px;
+    top: 171px;
+    width: 464px;
+    height: 262px;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+}
+#section5 .wrap .imgbox .innerpc img.mockup{
+    width: 100%;
+}
+#section5 .wrap .imgbox .innerpc img.mockup:hover{
+    animation: pc_ani 9s ease-in-out infinite;
+}
+@keyframes pc_ani{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-83%);}
+}
+
+/* 광화갤러리 반응형 애니메이션 */
+#section6 .wrap .imgbox .innerpc{
+    position: absolute;
+    left: 262px;
+    top: 260px;
+    width: 577px;
+    height: 330px;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+}
+#section6 .wrap .imgbox .innerpc img.mockup{
+    width: 100%;
+    border-radius: 10px;
+}
+#section6 .wrap .imgbox .innerpc img.mockup:hover{
+    animation: pc_ani2 8s ease-in-out infinite;
+}
+@keyframes pc_ani2{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-80%);}
+}
+
+/* 라푸마 반응형 애니메이션 */
+#section7 .wrap .imgbox .innerpc{
+    position: absolute;
+    left: 214px;
+    top: 22px;
+    width: 583px;
+    height: 364px;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+}
+#section7 .wrap .imgbox .innerpc img.mockup{
+    width: 100%;
+}
+#section7 .wrap .imgbox .innerpc img.mockup:hover{
+    animation: pc_ani3 7s ease-in-out infinite;
+}
+@keyframes pc_ani3{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-68%);}
+}
+#section7 .wrap .imgbox .innermob{
+    position: absolute;
+    left: 10px;
+    top: 171px;
+    width: 156px;
+    height: 340px;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+}
+#section7 .wrap .imgbox .innermob img.mmockup{
+    width: 100%;
+    border-radius: 20px;
+}
+#section7 .wrap .imgbox .innermob img.mmockup:hover{
+    animation: mobile_ani 7s ease-in-out infinite;
+}
+@keyframes mobile_ani{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-58%);}
+}
+
+/* 원티드 반응형 애니메이션 */
+#section8 .wrap .imgbox .innermob{
+    position: absolute;
+    left: 430px;
+    top: 175px;
+    width: 157px;
+    height: 341px;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+}
+#section8 .wrap .imgbox .innermob img.mmockup{
+    width: 100%;
+    border-radius: 20px;
+}
+#section8 .wrap .imgbox .innermob img.mmockup:hover{
+    animation: mobile_ani2 9s ease-in-out infinite;
+}
+@keyframes mobile_ani2{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-83%);}
 }

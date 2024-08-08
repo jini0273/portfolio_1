@@ -25,7 +25,7 @@ navigation: true,
 // 네이게이터 위치
 navigationPosition: 'right',
 // 하이퍼링크
-anchors:['num0', 'num1', 'num2','num3','num4','num5','num6','num7','num8','num9'],
+anchors:['num0', 'num1', 'num2','num3','num4','num5','num6','num7','num8','num9','num10'],
 
 afterLoad : function(orgin, destination, direction){
     var origin = this;

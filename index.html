@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KJY Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -16,9 +18,9 @@
             <ul class="gnb">
                 <li><a href="#num0">MAIN</a></li>
                 <li><a href="#num1">ABOUT</a></li>
-                <li><a href="#num2">CONTACT</a></li>
                 <li><a href="#num5">CODING</a></li>
                 <li><a href="#num9">DESIGN</a></li>
+                <li><a href="#num10">CONTACT</a></li>
                 
             </ul>
         </nav>
@@ -27,8 +29,8 @@
     <div id="fullpage">
         <!-- 첫번째 섹션 -->
         <div id="section0" class="section">
-            <h2 class="maintxt1">UI/UX</h2>
-            <h2 class="maintxt2">김진이</h2>
+            <h2 class="maintxt1 .ani.x_left">UI/UX</h2>
+            <h2 class="maintxt2 .ani.x_right">김진이</h2>
         </div>
         <!-- 두번쨰 섹션 -->
         <div id="section1" class="section">
@@ -56,10 +58,10 @@
             <div class="introduce">
                 <h2>제 소개를<br> 해보겠습니다!</h2>
                 <ul>
-                    <li>이름은 김진이입니다.</li>
-                    <li>연락처는 010-1234-5678입니다.</li>
-                    <li>이메일 : jiniabc@naver.com</li>
-                    <li>사는 곳은 김포시 하성...</li>
+                    <li>이름 : 김진이</li>
+                    <li>연락처 : 010-2573-0273</li>
+                    <li>이메일 : wlsdl5118@naver.com</li>
+                    <li>사는 곳 : 경기도 김포시 하성면</li>
                 </ul>
             </div>
         </div>
@@ -68,10 +70,10 @@
             <div class="introduce2">
                 <h2>땡땡회사에<br> 입사하기까지</h2>
                 <ul>
-                    <li>**대학교 **과 전공<span>내용을 입력</span></li>
-                    <li>** 목형<span>내용을 입력</span></li>
-                    <li>** 회사<span>내용을 입력</span></li>
-                    <li>경력사항<span>내용을 입력</span></li>
+                    <li>보건복지 전공<span>2015.02~2018.02</span></li>
+                    <li>동서목형<span>박스 도안 및 설계작업</span></li>
+                    <li>씨에스트레이드<span>거래처 응대 및 사무업무</span></li>
+                    <li>비전공자를 위한 UI/UX (EZEN)<span>2023.02~2024.08</span></li>
                 </ul>
             </div>
         </div>
@@ -142,7 +144,7 @@
                                 <div class="gagein g8"></div>
                             </div>
                             <div class="tit">
-                                illustrator 85%
+                                illustrator 90%
                             </div>
                         </li>
                     </ul>
@@ -164,7 +166,7 @@
                     <ul>
                         <li>
                             <span class="spantop">제작환경</span>
-                            <span class="spanbottom">HTML5, CSS3 ,jQuery</span>
+                            <span class="spanbottom">HTML5, CSS3, jQuery</span>
                         </li>
                     </ul>
                     <ul>
@@ -173,10 +175,15 @@
                             <span class="spanbottom">main page</span>
                         </li>
                     </ul>
-                    <a href="">사이트 바로가기</a>
+                    <div class="btn_wrap">
+                        <button onclick="window.open('http://jin22.dothome.co.kr/06_cheileng/index.html')">PC Ver.</button>
+                    </div>
                 </div>
                 <div class="imgbox">
                     <img src="./images/cheileng.png" alt="제일엔지니어링">
+                    <div class="innerpc">
+                        <img class="mockup" src="./images/cheileng design.JPG" alt="제일eng pc버전">
+                    </div>
                 </div>
             </div>
         </div>
@@ -185,6 +192,9 @@
             <div class="wrap">
                 <div class="imgbox">
                     <img src="./images/gallery.png" alt="광화갤러리">
+                    <div class="innerpc">
+                        <img class="mockup" src="./images/gallery page.png" alt="광화갤러리 pc버전">
+                    </div>
                 </div>
                 <div class="info">
                     <h3>광화갤러리</h3>
@@ -204,10 +214,12 @@
                     <ul>
                         <li>
                             <span class="spantop">제작범위</span>
-                            <span class="spanbottom">전체 page (main 1 + sub 6)</span>
+                            <span class="spanbottom">전체 page (main 1 + sub 5)</span>
                         </li>
                     </ul>
-                    <a href="">사이트 바로가기</a>
+                    <div class="btn_wrap">
+                        <button onclick="window.open('http://jin22.dothome.co.kr/35_gallery(%EC%84%9C%EB%B8%8C%ED%8E%98%EC%9D%B4%EC%A7%80)/index.html')">PC Ver.</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -226,7 +238,7 @@
                     <ul>
                         <li>
                             <span class="spantop">제작환경</span>
-                            <span class="spanbottom">HTML5, CSS3 ,jQuery</span>
+                            <span class="spanbottom">HTML5, CSS3, jQuery</span>
                         </li>
                     </ul>
                     <ul>
@@ -242,12 +254,18 @@
                         </li>
                     </ul>
                     <div class="btn_wrap">
-                        <a href="">PC View</a>
-                        <a href="">Mobile View</a>
+                        <button onclick="window.open('http://jin22.dothome.co.kr/07_lafuma/index.html')">PC Ver.</button>
+                        <button onclick="window.open('http://jin22.dothome.co.kr/07_lafuma/index.html','pop1','width=430,height=900')">Mobile Ver.</button>
                     </div>
                 </div>
                 <div class="imgbox">
-                    <img src="./images/lafumq.png" alt="라푸마">
+                    <img src="./images/lafuma.png" alt="라푸마">
+                    <div class="innerpc">
+                        <img class="mockup" src="./images/lafuma design.png" alt="라푸마 pc버전">
+                    </div>
+                    <div class="innermob">
+                        <img class="mmockup" src="./images/mlafuma design.png" alt="라푸마 mobile버전">
+                    </div>
                 </div>
             </div>
         </div>
@@ -256,6 +274,9 @@
             <div class="wrap">
                 <div class="imgbox">
                     <img src="./images/wanted.png" alt="원티드">
+                    <div class="innermob">
+                        <img class="mmockup" src="./images/mwanted design.png" alt="원티드 mobile버전">
+                    </div>
                 </div>
                 <div class="info">
                     <h3>Wanted (원티드)</h3>
@@ -269,7 +290,7 @@
                     <ul>
                         <li>
                             <span class="spantop">제작환경</span>
-                            <span class="spanbottom">HTML5, CSS3 ,jQuery</span>
+                            <span class="spanbottom">HTML5, CSS3, jQuery</span>
                         </li>
                     </ul>
                     <ul>
@@ -286,8 +307,8 @@
                         </li>
                     </ul>
                     <div class="btn_wrap">
-                        <a href="">PC View</a>
-                        <a href="">Mobile View</a>
+                        <button onclick="window.open('http://jin22.dothome.co.kr/09_kjy/index.html')">PC Ver.</button>
+                        <button onclick="window.open('http://jin22.dothome.co.kr/09_kjy/index.html','pop1','width=430,height=900')">Mobile Ver.</button>
                     </div>
                 </div>
             </div>
@@ -306,7 +327,7 @@
                         <div class="graphicbox">
                             <ul class="graphics">
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/graphics1.png" data-fancybox="gallery" data-caption="로고 디자인 1">
                                         <div class="imgbox">
                                             <img src="./images/graphics1.png" alt="로고 디자인1">
                                         </div>
@@ -316,69 +337,9 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/delaypage.jpg" data-fancybox="gallery" data-caption="팝업 디자인">
                                         <div class="imgbox">
-                                            <img src="./images/graphics2.png" alt="로고 디자인2">
-                                            <p>Logo Design
-                                                <span class="material-symbols-outlined">search</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="imgbox">
-                                            <img src="./images/poster.png" alt="떡볶이 전단지">
-                                            <p>Poster Design
-                                                <span class="material-symbols-outlined">search</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>Castle Design
-                                                <span class="material-symbols-outlined">search</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>Suncream Design
-                                                <span class="material-symbols-outlined">search</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>Hyundaicard Design
-                                                <span class="material-symbols-outlined">search</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>Lgbanner Design
-                                                <span class="material-symbols-outlined">search</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
+                                            <img src="./images/delaypage.jpg" alt="popup디자인">
                                             <p>Popup Design
                                                 <span class="material-symbols-outlined">search</span>
                                             </p>
@@ -386,30 +347,80 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/banner.jpg" data-fancybox="gallery" data-caption="배너 디자인">
                                         <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>Iphone Design
+                                            <img src="./images/banner.jpg" alt="배너 디자인">
+                                            <p>Banner Design
                                                 <span class="material-symbols-outlined">search</span>
                                             </p>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/sign2.jpg" data-fancybox="gallery" data-caption="간판 디자인">
                                         <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>Ribbon Design
+                                            <img src="./images/sign2.jpg" alt="떡볶이 간판">
+                                            <p>Sign Design
                                                 <span class="material-symbols-outlined">search</span>
                                             </p>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/detail.png" data-fancybox="gallery" data-caption="상세페이지">
                                         <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>Icon Design
+                                            <img src="./images/detailpage.png" alt="상세페이지">
+                                            <p>Detailed page Design
+                                                <span class="material-symbols-outlined">search</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./images/sign3.png" data-fancybox="gallery" data-caption="간판 디자인">
+                                        <div class="imgbox">
+                                            <img src="./images/sign3.png" alt="간판 디자인">
+                                            <p>sign Design
+                                                <span class="material-symbols-outlined">search</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./images/phonecase.png" data-fancybox="gallery" data-caption="캐릭터 디자인(폰케이스)">
+                                        <div class="imgbox">
+                                            <img src="./images/phonecase.png" alt="캐릭터 디자인1">
+                                            <p>Phonecase Design
+                                                <span class="material-symbols-outlined">search</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./images/event2.png" data-fancybox="gallery" data-caption="이벤트 포스터">
+                                        <div class="imgbox">
+                                            <img src="./images/event.png" alt="event poster">
+                                            <p>Poster Design
+                                                <span class="material-symbols-outlined">search</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./images/bag.png" data-fancybox="gallery" data-caption="캐릭터 디자인">
+                                        <div class="imgbox">
+                                            <img src="./images/bag.png" alt="캐릭터 디자인2">
+                                            <p>Character Design
+                                                <span class="material-symbols-outlined">search</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./images/popup3_detail.png" data-fancybox="gallery" data-caption="팝업 디자인">
+                                        <div class="imgbox">
+                                            <img src="./images/popup3.png" alt="Popup">
+                                            <p>Popup Design
                                                 <span class="material-symbols-outlined">search</span>
                                             </p>
                                         </div>
@@ -422,79 +433,79 @@
                         <div class="uiuxbox">
                             <ul class="uiux">
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/mobile.png" data-fancybox="UI/UX" data-caption="모바일 쇼핑몰">
                                         <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>uiux01_grid
+                                            <img src="./images/mobile.png" alt="모바일 쇼핑몰">
+                                            <p>uiux01_Mobile
                                                 <span class="material-symbols-outlined">search</span>
                                             </p>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/mobile2.png" data-fancybox="UI/UX" data-caption="모바일 쇼핑몰 시안">
                                         <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>uiux02_pattern
+                                            <img src="./images/mobile2.png" alt="모바일 쇼핑몰 시안">
+                                            <p>uiux02_Mobile
                                                 <span class="material-symbols-outlined">search</span>
                                             </p>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/cheileng design.JPG" data-fancybox="UI/UX" data-caption="제일엔지니어링">
                                         <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>uiux03_blend
+                                            <img src="./images/cheileng.png" alt="제일엔지니어링">
+                                            <p>uiux03_Cheileng
                                                 <span class="material-symbols-outlined">search</span>
                                             </p>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/daelim design.JPG" data-fancybox="UI/UX" data-caption="DL이앤씨">
                                         <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>uiux04_brush
+                                            <img src="./images/daelim.png" alt="DL이앤씨">
+                                            <p>uiux04_Daelim
                                                 <span class="material-symbols-outlined">search</span>
                                             </p>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/pc design.png" data-fancybox="UI/UX" data-caption="PC 시안">
                                         <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>uiux05_headset
+                                            <img src="./images/pc design.png" alt="pc 시안">
+                                            <p>uiux05_PC
                                                 <span class="material-symbols-outlined">search</span>
                                             </p>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/gallery design.png" data-fancybox="UI/UX" data-caption="광화갤러리">
                                         <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>uiux06_site
-                                                <span class="material-symbols-outlined">search</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="netfilx">
-                                    <a href="#">
-                                        <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
-                                            <p>uiux07_netflix
+                                            <img src="./images/gallery.png" alt="광화갤러리">
+                                            <p>uiux06_Gallery
                                                 <span class="material-symbols-outlined">search</span>
                                             </p>
                                         </div>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="./images/netfilx design.JPG" data-fancybox="UI/UX" data-caption="넷플릭스">
                                         <div class="imgbox">
-                                            <!-- <img src="" alt=""> -->
+                                            <img src="./images/netfilx.png" alt="넷플릭스">
+                                            <p>uiux07_Netflix
+                                                <span class="material-symbols-outlined">search</span>
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./images/wanted design1.png" data-fancybox="UI/UX" data-caption="원티드">
+                                        <div class="imgbox">
+                                            <img src="./images/wanted.png" alt="원티드">
                                             <p>uiux08_responsive
                                                 <span class="material-symbols-outlined">search</span>
                                             </p>
@@ -502,7 +513,7 @@
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -513,8 +524,8 @@
             <div class="inner">
                 <div class="footer_wrap">
                     <p>소중한 시간 내주셔서 감사합니다.</p>
-                    <a class="btn_m">모바일로 문자보내기</a>
-                    <a>메일 보내기</a>
+                    <a class="btn_m" href="sms:010-2573-0273">모바일로 문자보내기</a>
+                    <a href="mailto:jin2465@nate.com">메일 보내기</a>
                 </div>
             </div>
         </div>
@@ -523,5 +534,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="./js/main.js"></script>
 </html>
