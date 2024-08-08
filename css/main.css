@@ -792,7 +792,7 @@ button{border: none; background: none; cursor: pointer;}
 }
 
 /* 광화갤러리 반응형 애니메이션 */
-#section6 .wrap .imgbox .innerpc{
+/* #section6 .wrap .imgbox .innerpc{
     position: absolute;
     left: 262px;
     top: 260px;
@@ -812,7 +812,7 @@ button{border: none; background: none; cursor: pointer;}
 @keyframes pc_ani2{
     0%{transform: translateY(0);}
     100%{transform: translateY(-80%);}
-}
+} */
 
 /* 라푸마 반응형 애니메이션 */
 #section7 .wrap .imgbox .innerpc{
