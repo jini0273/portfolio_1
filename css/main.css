@@ -51,10 +51,14 @@ button{border: none; background: none; cursor: pointer;}
     background-size: 100%, 100%;
 }
 #fullpage #section9{
-    background: url(../imges/Desktop\ -\ 10.jpg) no-repeat top center;
+    background: url(../imges/Desktop\ -\ 9.png) no-repeat top center;
     background-size: 100%, 100%;
 }
 #fullpage #section10{
+    background: url(../imges/Desktop\ -\ 10.jpg) no-repeat top center;
+    background-size: 100%, 100%;
+}
+#fullpage #section11{
     background: url(../imges/Desktop\ -\ 11.jpg) no-repeat top center;
     background-size: 100%, 100%;
 }
@@ -242,8 +246,9 @@ button{border: none; background: none; cursor: pointer;}
 
 /* 네번째 section */
 #fullpage #section3 .introduce2{
+    width: 1000px;
     position: absolute;
-    right: 580px;
+    left: 850px;
     top: 100px;
 }
 #fullpage #section3 .introduce2 h2{
@@ -253,36 +258,33 @@ button{border: none; background: none; cursor: pointer;}
     margin-bottom: 102px;
 }
 #fullpage #section3 .introduce2 ul li{
-    width: 450px;
-    height: 80px;
-    padding: 0px 60px;
-    align-items: center;
-    border-radius: 999px;
-    background: #2c2c2c;
-    color: #fff;
-    text-align: center;
-    line-height: 80px;
-    font-size: 33px;
-    font-weight: 600;
-    position: relative;
-    margin-bottom: 30px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
 }
 #fullpage #section3 .introduce2 ul li:last-child{
     font-size: 25px;
 }
-#fullpage #section3 .introduce2 ul span{
-    width: 450px;
-    height: 80px;
-    padding: 0px 60px;
-    text-align: center;
-    font-size: 33px;
-    font-weight: 600;
-    line-height: 80px;
-    border-radius: 999px;
-    color: #2c2c2c;
-    background: #f5cc00;
-    position: absolute;
-    left: 400px;
+#fullpage #section3 .introduce2 .intor{
+    width: 100%;
+    margin-top: -20px;
+    padding: 35px;
+}
+#fullpage #section3 .introduce2 .intor h4{
+    font-size: 30px;
+    color: #2C2C2C;
+    margin-bottom: 20px;
+}
+#fullpage #section3 .introduce2 .intor ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+#fullpage #section3 .introduce2 .intor ul span{
+    font-size: 24px;
+    margin-left: 30px;
 }
 /* 다섯번째 section */
 #section4 h2{
@@ -470,7 +472,21 @@ button{border: none; background: none; cursor: pointer;}
 }
 
 /* 열번째 section */
-#section9 .inner{
+#fullpage #section9 .wrap{
+    padding: 0 100px;
+}
+#fullpage #section9 .imgbox{
+    width: 600px;
+}
+#fullpage #section9 .imgbox img{
+    width: 100%;
+}
+#fullpage #section9 .wrap .info .spanbottom{
+    left: 490px;
+}
+
+/* 열한번째 section */
+#section10 .inner{
     width: 1200px;
     margin: 0 0 0 500px;
     display: flex;
@@ -478,7 +494,7 @@ button{border: none; background: none; cursor: pointer;}
     align-items: center; 
     /* border: 1px solid red; */
 }
-#section9 .inner::before{
+#section10 .inner::before{
     content: '06';
     font-size: 180px;
     font-weight: bold;
@@ -487,7 +503,7 @@ button{border: none; background: none; cursor: pointer;}
     left: -23%;
     top: 30px;
 }
-#section9 .inner::after{
+#section10 .inner::after{
     content: 'Design';
     font-size: 36px;
     font-weight: bold;
@@ -496,25 +512,25 @@ button{border: none; background: none; cursor: pointer;}
     left: -130px;
     top: 225px;
 }
-#section9 .inner .content_wrap .tab_menu{
+#section10 .inner .content_wrap .tab_menu{
     position: absolute;
     left: 370px;
     top: 55%;
     transform: translateY(-55%);
 }
-#section9 .inner .content_wrap .tab_menu ul.tab_btn li{
+#section10 .inner .content_wrap .tab_menu ul.tab_btn li{
     border-radius: 12px;
     margin-bottom: 24px;
     border: 3px solid #48092a;
     background: #fff;
 }
-#section9 .inner .content_wrap .tab_menu ul.tab_btn li.on{
+#section10 .inner .content_wrap .tab_menu ul.tab_btn li.on{
     background: #48092a;
 }
-#section9 .inner .content_wrap .tab_menu ul.tab_btn li.on a{
+#section10 .inner .content_wrap .tab_menu ul.tab_btn li.on a{
     color: #fff;
 }
-#section9 .inner .content_wrap .tab_menu ul.tab_btn li a{
+#section10 .inner .content_wrap .tab_menu ul.tab_btn li a{
     display: block;
     font-size: 24px;
     font-weight: bold;
@@ -525,26 +541,26 @@ button{border: none; background: none; cursor: pointer;}
 }
 
 /* 그래픽영역 */
-#section9 .inner ul.graphics{
+#section10 .inner ul.graphics{
     display: grid;
     grid-template-columns: 291px 291px 291px 291px;
     grid-template-rows: 220px 220px 220px;
     grid-gap: 12px;
 }
-#section9 .inner ul.graphics li{
+#section10 .inner ul.graphics li{
     width: 100%;
     height: 100%;
     position: relative;
     cursor: pointer;
 }
-#section9 .inner ul.graphics li a .imgbox{
+#section10 .inner ul.graphics li a .imgbox{
     width: 100%;
     height: 100%;
     border-radius: 8px;
     overflow: hidden;
     /* background: #2c2c2c; */
 }
-#section9 .inner ul.graphics li a .imgbox img{
+#section10 .inner ul.graphics li a .imgbox img{
     width: 100%;
     height: 100%;
     /* 이미지를 채울때 */
@@ -552,13 +568,13 @@ button{border: none; background: none; cursor: pointer;}
     transition: all 0.5s ease-in-out;
 }
 /* 합치기 */
-#section9 .inner ul.graphics li:nth-child(3){
+#section10 .inner ul.graphics li:nth-child(3){
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
 }
-#section9 .inner ul.graphics li:nth-child(8){
+#section10 .inner ul.graphics li:nth-child(8){
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -566,7 +582,7 @@ button{border: none; background: none; cursor: pointer;}
 }
 
 /* 커버 */
-#section9 .inner ul.graphics li::before{
+#section10 .inner ul.graphics li::before{
     width: 100%;
     height: 100%;
     content: '';
@@ -580,7 +596,7 @@ button{border: none; background: none; cursor: pointer;}
     border-radius: 8px;
 }
 /* 글자 띄우기 */
-#section9 .inner ul.graphics li p{
+#section10 .inner ul.graphics li p{
     color: #fff;
     font-family: "Noto Sans KR";
     text-align: center;
@@ -593,23 +609,23 @@ button{border: none; background: none; cursor: pointer;}
     transition: all 0.5s ease-in-out;
     z-index: 11;
 }
-#section9 .inner ul.graphics li span{
+#section10 .inner ul.graphics li span{
     display: block;
 }
 
 /* hover */
-#section9 .inner ul.graphics li:hover::before{
+#section10 .inner ul.graphics li:hover::before{
     opacity: 1;
 }
 
 /* 글자는 아래에서 위로 올라오게 */
-#section9 .inner ul.graphics li:hover p{
+#section10 .inner ul.graphics li:hover p{
     opacity: 1;
     top: 50%;
 }
 
 /* hover시 이미지 커지게 */
-#section9 .inner ul.graphics li:hover a .imgbox img{
+#section10 .inner ul.graphics li:hover a .imgbox img{
     transform: scale(1.2);
 }
 
@@ -664,7 +680,7 @@ button{border: none; background: none; cursor: pointer;}
 }
 
 /* 커버 */
-#section9 .inner ul.uiux li::before{
+#section10 .inner ul.uiux li::before{
     width: 100%;
     height: 100%;
     content: '';
@@ -678,7 +694,7 @@ button{border: none; background: none; cursor: pointer;}
     border-radius: 8px;
 }
 /* 글자 띄우기 */
-#section9 .inner ul.uiux li p{
+#section10 .inner ul.uiux li p{
     color: #fff;
     font-family: "Noto Sans KR";
     text-align: center;
@@ -691,23 +707,23 @@ button{border: none; background: none; cursor: pointer;}
     transition: all 0.5s ease-in-out;
     z-index: 11;
 }
-#section9 .inner ul.uiux li span{
+#section10 .inner ul.uiux li span{
     display: block;
 }
 
 /* hover */
-#section9 .inner ul.uiux li:hover::before{
+#section10 .inner ul.uiux li:hover::before{
     opacity: 1;
 }
 
 /* 글자는 아래에서 위로 올라오게 */
-#section9 .inner ul.uiux li:hover p{
+#section10 .inner ul.uiux li:hover p{
     opacity: 1;
     top: 50%;
 }
 
 /* hover시 이미지 커지게 */
-#section9 .inner ul.uiux li:hover a .imgbox img{
+#section10 .inner ul.uiux li:hover a .imgbox img{
     transform: scale(1.2);
 }
 
@@ -728,12 +744,12 @@ button{border: none; background: none; cursor: pointer;}
 }
 
 /* footer */
-#section10 .inner{
+#section11 .inner{
     width: 100%;
     height: auto;
     position: relative;
 }
-#section10 .inner .footer_wrap{
+#section11 .inner .footer_wrap{
     width: 740px;
     text-align: center;
     position: absolute;
@@ -741,13 +757,13 @@ button{border: none; background: none; cursor: pointer;}
     top: 40%;
     transform: translateY(-40%);
 }
-#section10 .inner p{
+#section11 .inner p{
     color: #333;
     font-size: 55px;
     font-weight: 800;
     margin-bottom: 100px;
 }
-#section10 .inner a{
+#section11 .inner a{
     display: block;
     width: 400px;
     line-height: 70px;
@@ -761,10 +777,10 @@ button{border: none; background: none; cursor: pointer;}
     margin: 0 auto;
     cursor: pointer;
 }
-#section10 .inner .btn_m{
+#section11 .inner .btn_m{
     margin-bottom: 50px;
 }
-#section10 .inner a:hover{
+#section11 .inner a:hover{
     background: #101010;
 }
 
@@ -790,29 +806,6 @@ button{border: none; background: none; cursor: pointer;}
     0%{transform: translateY(0);}
     100%{transform: translateY(-83%);}
 }
-
-/* 광화갤러리 반응형 애니메이션 */
-/* #section6 .wrap .imgbox .innerpc{
-    position: absolute;
-    left: 262px;
-    top: 260px;
-    width: 577px;
-    height: 330px;
-    z-index: 10;
-    overflow: hidden;
-    cursor: pointer;
-}
-#section6 .wrap .imgbox .innerpc img.mockup{
-    width: 100%;
-    border-radius: 10px;
-}
-#section6 .wrap .imgbox .innerpc img.mockup:hover{
-    animation: pc_ani2 8s ease-in-out infinite;
-}
-@keyframes pc_ani2{
-    0%{transform: translateY(0);}
-    100%{transform: translateY(-80%);}
-} */
 
 /* 라푸마 반응형 애니메이션 */
 #section7 .wrap .imgbox .innerpc{
